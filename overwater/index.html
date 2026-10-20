@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OverWater press kit</title>
+<meta name="description" content="OverWater: screenshots, facts and sources for App Store editorial.">
+<style>
+  :root { --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --accent:#0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#f5f5f7; --muted:#a1a1a6; --line:#2c2c2e; --accent:#64a9f0; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 -apple-system, "SF Pro Text", system-ui, sans-serif; padding:32px 16px 64px; }
+  main { max-width:960px; margin:0 auto; }
+  header { display:flex; gap:20px; align-items:center; margin-bottom:28px; }
+  header img { width:96px; height:96px; border-radius:22px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:36px 0 12px; }
+  p, li { max-width:70ch; }
+  .muted { color:var(--muted); }
+  dl { display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; margin:0; }
+  dt { color:var(--muted); }
+  .shots { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:14px; }
+  figure { margin:0; }
+  figure img { width:100%; height:auto; border:1px solid var(--line); border-radius:12px; display:block; }
+  figcaption { font-size:13px; color:var(--muted); margin-top:6px; }
+  a { color:var(--accent); }
+  ul { padding-left:20px; }
+  footer { margin-top:48px; font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="img/icon.png" alt="OverWater app icon" onerror="this.hidden=true">
+    <div>
+      <h1>OverWater press kit</h1>
+      <p class="muted">Point your iPhone at the water, see every ship named · updated 20 October 2026</p>
+    </div>
+  </header>
+
+  <h2>What it is</h2>
+  <p>OverWater is an iPhone and iPad app for identifying ships. Point the camera at the water and every vessel in sight is labelled on the horizon with its name and distance. Tap one for its type, flag, length, destination and arrival time. The same ships appear on a radar map, and each one you spot becomes a collectible card.</p>
+
+  <h2>One-sentence pitch</h2>
+  <p>Point your iPhone at the water and OverWater puts a name on every ship in view.</p>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Look: camera view with ship labels on the horizon, a compass ribbon, and a drawn horizon when the camera or tracking is not available.</li>
+    <li>Radar: map with range rings at 1, 3, 6 and 12 nautical miles and six-minute course lines.</li>
+    <li>Now: live list of ships in range, sorted by distance, with fix age on every row.</li>
+    <li>Aboard mode: when your phone's track matches a ship, such as a ferry, the Now tab shows that ship's speed, heading, destination, arrival time and the ships you will pass.</li>
+    <li>Passing alerts: a card with the side to look and a countdown when a ship will pass within one nautical mile.</li>
+    <li>Ship cards, harbour bingo, a 10-round quiz and medals.</li>
+    <li>Learn to Spot: 12 vessel types explained in plain words.</li>
+    <li>Photo mode: labels baked into the picture. Photos are saved only when you tap Save.</li>
+    <li>Search by name, MMSI, IMO number or call sign across the whole feed.</li>
+  </ul>
+
+  <h2>Free and Pro</h2>
+  <p>Free for good: Look, radar, the Now list, the first 3 vessel details, aboard mode, passing alerts, ship cards, harbour bingo, the quiz, photo mode, Learn to Spot, medals and search. Pro is a yearly subscription that adds unlimited vessel details, the port board for the nearest port, and custom alerts. Anything free in 1.0 stays free. There are no ads and no account.</p>
+
+  <h2>Where it works</h2>
+  <p>Live traffic covers the Baltic Sea and the Gulf of Finland in 1.0. Everywhere else the app offers a recorded Helsinki feed, clearly marked as recorded, so it can be tried from any location. Boats without AIS do not appear; most pleasure craft under 15 metres carry none. Every ship shows the age of its last position.</p>
+
+  <h2>Data sources and licences</h2>
+  <ul>
+    <li>Live ship positions and vessel details: Fintraffic / digitraffic.fi, licence CC BY 4.0 (<a href="https://www.digitraffic.fi/en/">digitraffic.fi</a>).</li>
+    <li>Country of registration is derived from the MMSI prefix using the ITU maritime identification digits table.</li>
+    <li>Maps: Apple Maps through MapKit.</li>
+  </ul>
+
+  <h2>Facts</h2>
+  <dl>
+    <dt>Version</dt><dd>1.0, built with Xcode 27.1</dd>
+    <dt>Platforms</dt><dd>iPhone and iPad, iOS 18 or later</dd>
+    <dt>Languages</dt><dd>5 locales: English (US, UK, Australia, Canada) and Spanish (Mexico)</dd>
+    <dt>Price</dt><dd>Free, with a yearly Pro subscription. No ads.</dd>
+    <dt>Privacy</dt><dd>No account, no tracking. Location is used on the device. <a href="privacy/">Privacy policy</a>.</dd>
+    <dt>Accessibility</dt><dd>Light and dark appearance follow the device, Reduce Motion is respected, haptics on iPhone.</dd>
+    <dt>Developer</dt><dd>One developer in Dubai</dd>
+  </dl>
+
+  <h2>Screens</h2>
+  <p class="muted">Screenshots from the 1.0 build, English (US). Images appear here when the final set is added under img/.</p>
+  <div class="shots">
+    <figure><img src="img/iphone-look.jpg" alt="iPhone. Look view with labelled ships on the horizon." onerror="this.closest('figure').hidden=true"><figcaption>iPhone. Look view with labelled ships on the horizon.</figcaption></figure>
+    <figure><img src="img/iphone-now.jpg" alt="iPhone. Now list sorted by distance." onerror="this.closest('figure').hidden=true"><figcaption>iPhone. Now list sorted by distance.</figcaption></figure>
+    <figure><img src="img/iphone-radar.jpg" alt="iPhone. Radar with range rings and course lines." onerror="this.closest('figure').hidden=true"><figcaption>iPhone. Radar with range rings and course lines.</figcaption></figure>
+    <figure><img src="img/iphone-aboard.jpg" alt="iPhone. Aboard mode on a ferry." onerror="this.closest('figure').hidden=true"><figcaption>iPhone. Aboard mode on a ferry.</figcaption></figure>
+    <figure><img src="img/iphone-cards.jpg" alt="iPhone. Ship cards deck." onerror="this.closest('figure').hidden=true"><figcaption>iPhone. Ship cards deck.</figcaption></figure>
+    <figure><img src="img/iphone-bingo.jpg" alt="iPhone. Harbour bingo." onerror="this.closest('figure').hidden=true"><figcaption>iPhone. Harbour bingo.</figcaption></figure>
+    <figure><img src="img/ipad-radar.jpg" alt="iPad. Radar with the vessel detail panel." onerror="this.closest('figure').hidden=true"><figcaption>iPad. Radar with the vessel detail panel.</figcaption></figure>
+  </div>
+
+  <h2>Assets</h2>
+  <ul>
+    <li><a href="img/icon-1024.png">Icon, 1024 px PNG</a></li>
+  </ul>
+
+  <footer>Contact: hemal08ce094@gmail.com · <a href="support/">Support</a> · <a href="privacy/">OverWater privacy policy</a></footer>
+</main>
+</body>
+</html>

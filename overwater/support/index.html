@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OverWater support</title>
+<meta name="description" content="OverWater support and frequently asked questions.">
+<style>
+  :root { --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --accent:#0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#f5f5f7; --muted:#a1a1a6; --line:#2c2c2e; --accent:#64a9f0; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 -apple-system, "SF Pro Text", system-ui, sans-serif; padding:32px 16px 64px; }
+  main { max-width:960px; margin:0 auto; }
+  header { display:flex; gap:20px; align-items:center; margin-bottom:28px; }
+  header img { width:96px; height:96px; border-radius:22px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:36px 0 12px; }
+  p, li { max-width:70ch; }
+  .muted { color:var(--muted); }
+  dl { display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; margin:0; }
+  dt { color:var(--muted); }
+  .shots { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:14px; }
+  figure { margin:0; }
+  figure img { width:100%; height:auto; border:1px solid var(--line); border-radius:12px; display:block; }
+  figcaption { font-size:13px; color:var(--muted); margin-top:6px; }
+  a { color:var(--accent); }
+  ul { padding-left:20px; }
+  footer { margin-top:48px; font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../img/icon.png" alt="OverWater app icon" onerror="this.hidden=true">
+    <div>
+      <h1>OverWater support</h1>
+      <p class="muted">Questions and answers · <a href="../">Back to the press kit</a></p>
+    </div>
+  </header>
+
+  <h2>Where does it work?</h2>
+  <p>Live ship traffic covers the Baltic Sea and the Gulf of Finland in version 1.0. Outside that area the Now tab says so instead of showing empty water. To try the app from anywhere, open Settings, choose Feed, then Recorded Baltic traffic (demo). The same switch is a button on the card that appears outside coverage. Recorded traffic is marked as recorded and is not live.</p>
+
+  <h2>Why is a boat missing?</h2>
+  <p>The app shows ships that transmit AIS and are received by the data provider. Boats without AIS do not appear, and most pleasure craft under 15 metres carry none. A ship can also be out of range of a receiving station, or its transmitter can be off. If a ship's last position is more than 3 minutes old, it is dimmed and labelled with how long ago it was seen. After 15 minutes it leaves the camera view and turns grey on the radar.</p>
+
+  <h2>The labels do not line up with the ships. How do I calibrate the heading?</h2>
+  <p>Open Settings and move Heading correction until a landmark you know, such as a lighthouse or a church tower, lines up with its label. Hold the phone upright and away from metal or magnets, and move it in a figure eight so the compass can settle. Eye height above water, also in Settings, changes how far below the horizon distant ships sit.</p>
+
+  <h2>What is free and what is Pro?</h2>
+  <p>Free for good: Look, radar, the Now list, your first 3 vessel details, aboard mode, passing alerts, ship cards, harbour bingo, the quiz, photo mode, Learn to Spot, medals and search. Pro is a yearly subscription that adds unlimited vessel details, the port board and custom alerts. Anything free in 1.0 stays free.</p>
+
+  <h2>How do I restore Pro or cancel it?</h2>
+  <p>Restore: open Settings, then the Pro row, then Restore. Use the same Apple Account you subscribed with. Cancel: open the Settings app on your iPhone, tap your name, then Subscriptions, then OverWater, and choose Cancel Subscription. Cancel at least 24 hours before the renewal date.</p>
+
+  <h2>Do I need the camera or location?</h2>
+  <p>No. Without location the app cannot work out which ships are near you, but you can still use Learn to Spot, the quiz, your cards and the recorded demo feed. Without the camera you get a drawn horizon with the same placements.</p>
+
+  <h2>Where does the data come from?</h2>
+  <p>Live traffic: Fintraffic / digitraffic.fi, licence CC BY 4.0. See the <a href="../">press kit</a> for all sources.</p>
+
+  <h2>Contact</h2>
+  <p>Write to <a href="mailto:hemal08ce094@gmail.com">hemal08ce094@gmail.com</a> with your iPhone model, iOS version and a short description. Screenshots help.</p>
+
+  <footer>Contact: hemal08ce094@gmail.com · <a href="../">OverWater press kit</a> · <a href="../privacy/">Privacy policy</a></footer>
+</main>
+</body>
+</html>
