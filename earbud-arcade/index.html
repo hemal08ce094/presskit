@@ -34,7 +34,7 @@
     <img src="img/icon.png" alt="Earbud Arcade app icon: a cream earbud inside four amber brackets on a near-black field">
     <div>
       <h1>Earbud Arcade</h1>
-      <p class="muted">Ten arcade games you aim with a hand-held earbud · updated 20 October 2026</p>
+      <p class="muted">Ten arcade games you aim with a hand-held earbud · updated 21 October 2026</p>
     </div>
   </header>
 
@@ -64,28 +64,51 @@
   </ul>
   <p>Every game is fully playable without earbuds, so a reviewer needs no accessory. Firing can also be a tap on the table, picked up by the microphone, with a slider and a live meter to set the threshold.</p>
 
+  <h2>iPhone Duo</h2>
+  <p>On iPhone Duo the app reads the hinge and lays out around the fold. This needs the iOS 27.1 SDK and is built into the 1.0 binary. Every other device keeps the normal layout.</p>
+  <ul>
+    <li>Partly folded with the crease across the screen (tabletop): the game takes the upper half. The lower half holds pause, recenter, the timer, the lives and the score at 72 point size, so nothing you tap sits on the fold.</li>
+    <li>Partly folded with the crease down the screen (book): the game takes the leading half and the controls take the other.</li>
+    <li>Open flat: the game fills the inner display and the score, timer and lives plates stay off the crease.</li>
+    <li>Library and game detail split at the fold: the grid is centered on the crease, and the detail screen shows the cover on one side and the text and Play on the other.</li>
+    <li>Closed: the outer display uses horizontal bars so the settings button and the status strip share the title row.</li>
+  </ul>
+  <p class="muted">The two captures below are the open layout, from the store set. There is no tabletop capture yet; the tabletop description comes from the code (Sources/Duo/FoldPlan.swift, Sources/Arcade/HUDView.swift).</p>
+
   <h2>Facts</h2>
   <dl>
-    <dt>Version</dt><dd>1.0, built with Xcode 27.1</dd>
-    <dt>Platforms</dt><dd>iPhone, iPad, Mac (one purchase covers all three)</dd>
+    <dt>Version</dt><dd>1.0, built with Xcode 27.1. Requires iOS 18, iPadOS 18 or macOS 15.</dd>
+    <dt>Games</dt><dd>Ten, all included. Each keeps a personal best.</dd>
+    <dt>Controllers</dt><dd>Four: earbud pointer, tilt (iPhone and iPad), touch, and mouse and keyboard (Mac)</dd>
+    <dt>Platforms</dt><dd>iPhone, iPad, native Mac (one purchase covers all three), plus iPhone Duo fold layouts</dd>
     <dt>Languages</dt><dd>5 locales: English (US, UK, Australia, Canada) and Spanish (Mexico)</dd>
-    <dt>Price</dt><dd>Paid once, no in-app purchases, no ads</dd>
-    <dt>Privacy</dt><dd>No account, no ads, no tracking. Anonymous usage analytics (games played, controller used) through PostHog, off with one switch in Settings. Scores and settings stay on the device. <a href="privacy/">Privacy policy</a>.</dd>
-    <dt>Accessibility</dt><dd>Light and dark appearance follow the device, Reduce Motion is respected, haptics on iPhone.</dd>
-    <dt>Window</dt><dd>10 November 2026 to 31 December 2026</dd>
+    <dt>Price</dt><dd>Paid once at USD 2.99, no in-app purchases, no ads, no account</dd>
+    <dt>Offline</dt><dd>Every game works without a network connection</dd>
+    <dt>Privacy</dt><dd>Anonymous usage events (games played, controller used) go to PostHog under a random install ID, and one switch in Settings turns them off. Motion and microphone data stay on the device and are never recorded. Scores and settings stay on the device. <a href="privacy/">Privacy policy</a>.</dd>
+    <dt>Accessibility</dt><dd>Light and dark appearance follow the device, Reduce Motion is respected, haptics on iPhone, VoiceOver values on the HUD</dd>
     <dt>Developer</dt><dd>One developer in Dubai</dd>
   </dl>
 
   <h2>Screens</h2>
-  <p class="muted">Final App Store screenshots from the 1.0 build, English (US), in the order they appear on the product page: two for iPhone, two for iPad, two for Mac. Frames come from the simulators and a Mac window capture; the line above each is the caption.</p>
+  <p class="muted">Raw captures of the 1.0 build with the current art, English (US): the iPhone 17 Pro and iPad Pro simulators and a native Mac window. No captions or device frames, except the two Duo images, which are store renders in a device frame.</p>
   <div class="shots">
-    <figure><img src="img/iphone-controller.jpg" alt="iPhone controller setup with the caption Hold one earbud. Aim. Tap., a live check box reading Earbud motion is coming in, a Twist slider and a Center pointer button"><figcaption>iPhone. Controller setup with Center pointer.</figcaption></figure>
-    <figure><img src="img/iphone-dirt-rally.jpg" alt="iPhone screenshot of Dirt Rally with the caption Dodge traffic on dirt roads: a top-down road with traffic and tokens, timer 1:21, score 2,170"><figcaption>iPhone. Dirt Rally in play.</figcaption></figure>
-    <figure><img src="img/ipad-library.jpg" alt="iPad landscape library with the caption Ten quick arcade games: a sidebar of control styles and ten game covers"><figcaption>iPad. Library, ten games.</figcaption></figure>
-    <figure><img src="img/ipad-saloon-standoff.jpg" alt="iPad landscape screenshot of Saloon Standoff with the caption Outdraw the outlaws: an outlaw in a window, a Quick draw +350 bonus, score 2,600"><figcaption>iPad. Saloon Standoff in play.</figcaption></figure>
-    <figure><img src="img/mac-pond-shot.jpg" alt="Mac window of Pond Shot with the caption Shoot ducks over the pond: crosshair over a duck at night, a +550 popup, score 4,150"><figcaption>Mac. Pond Shot in play.</figcaption></figure>
-    <figure><img src="img/mac-alien-siege.jpg" alt="Mac window of Alien Siege with the caption Hold off the alien wave: a full formation of aliens above four shields, timer 0:49, score 880"><figcaption>Mac. Alien Siege in play.</figcaption></figure>
+    <figure><img src="img/iphone-controller.jpg" alt="iPhone controller setup: Earbud pointer, Tilt and Touch cards, a live check box with a crosshair, and a Fire with Tap the screen selector"><figcaption>iPhone. Controller setup.</figcaption></figure>
+    <figure><img src="img/iphone-saloon-standoff.jpg" alt="iPhone Saloon Standoff: a three by three saloon facade, an outlaw in a red bandana in a doorway, score 750, three lives and a bullet tally"><figcaption>iPhone. Saloon Standoff.</figcaption></figure>
+    <figure><img src="img/iphone-dirt-rally.jpg" alt="iPhone Dirt Rally, top-down road with traffic"><figcaption>iPhone. Dirt Rally.</figcaption></figure>
+    <figure><img src="img/ipad-library.jpg" alt="iPad library: a sidebar of control styles and ten game covers"><figcaption>iPad. Library, ten games.</figcaption></figure>
+    <figure><img src="img/ipad-pond-shot.jpg" alt="iPad Pond Shot at night: a mallard in flight, a crosshair, a moon, score 3,150"><figcaption>iPad. Pond Shot.</figcaption></figure>
+    <figure><img src="img/mac-library.jpg" alt="Mac library window with the Mouse and keys controller and ten game covers"><figcaption>Mac. Library.</figcaption></figure>
+    <figure><img src="img/mac-dirt-rally.jpg" alt="Mac Dirt Rally: a top-down dirt road, three cars, a token, score 1,930"><figcaption>Mac. Dirt Rally.</figcaption></figure>
+    <figure><img src="img/mac-alien-siege.jpg" alt="Mac Alien Siege: two rows of aliens above four shields and a ship, timer 0:57"><figcaption>Mac. Alien Siege.</figcaption></figure>
+    <figure><img src="img/duo-library.jpg" alt="iPhone Duo open: the library with a controller bar, filter chips and game covers"><figcaption>iPhone Duo, open. Library (store render).</figcaption></figure>
+    <figure><img src="img/duo-saloon-standoff.jpg" alt="iPhone Duo open: Saloon Standoff filling the inner display"><figcaption>iPhone Duo, open. Saloon Standoff (store render).</figcaption></figure>
   </div>
+
+  <h2>Context</h2>
+  <ul>
+    <li><a href="https://www.thenationalnews.com/future/technology/2026/09/10/apples-foldable-phone-launched-everything-you-need-to-know-about-the-dh8499-iphone-duo/">The National, 10 September 2026: Apple's foldable phone launched</a>. Covers the iPhone Duo and its 19 cm inner display.</li>
+    <li><a href="https://www.macrumors.com/2025/09/29/ios-airpods-racing-game">MacRumors, 29 September 2025: a motorcycle racing iOS game you control with AirPods</a>. Another game steered by AirPods head motion.</li>
+  </ul>
 
   <h2>Assets</h2>
   <ul>
