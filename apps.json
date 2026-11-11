@@ -1,5 +1,9 @@
 [
  {
+  "slug": "tabletop",
+  "name": "Tabletop: Mac Remote Desktop"
+ },
+ {
   "slug": "magichourspotsmap",
   "name": "Magic Hour Spots Map"
  },
